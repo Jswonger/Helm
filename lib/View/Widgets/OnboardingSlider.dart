@@ -42,6 +42,5 @@ class OnboardingSliderParams extends State {
       sliderValue = input;
     });
     OnboardData.addUpdateData(title, sliderValue.round());
-    OnboardData.printData();
   }
 }
