@@ -19,9 +19,7 @@ class OnboardingView extends StatelessWidget {
               child: Text(
                   "In which of these categories are you most excited to build strength?"),
             ),
-            OnboardingSwitch(
-              text: "Depression",
-            ),
+            OnboardingSwitch(text: "Depression",),
             OnboardingSwitch(text: "General Anxiety"),
             OnboardingSwitch(text: "Social Anxiety"),
             OnboardingSwitch(text: "Fitness"),
@@ -38,37 +36,37 @@ class OnboardingView extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(25.0, 16.0, 0, 0),
               child: Text("General Mood"),
             ),
-            OnboardingSlider(),
+            OnboardingSlider(text: "General Mood"),
             Padding(
               padding: EdgeInsets.fromLTRB(25.0, 16.0, 0, 0),
               child: Text("Peace and Calm"),
             ),
-            OnboardingSlider(),
+            OnboardingSlider(text: "Peace and Calm"),
             Padding(
               padding: EdgeInsets.fromLTRB(25.0, 16.0, 0, 0),
               child: Text("Exercise"),
             ),
-            OnboardingSlider(),
+            OnboardingSlider(text: "Exercise"),
             Padding(
               padding: EdgeInsets.fromLTRB(25.0, 16.0, 0, 0),
               child: Text("Eating Well"),
             ),
-            OnboardingSlider(),
+            OnboardingSlider(text: "Eating Well"),
             Padding(
               padding: EdgeInsets.fromLTRB(25.0, 16.0, 0, 0),
               child: Text("Productivity"),
             ),
-            OnboardingSlider(),
+            OnboardingSlider(text: "Productivity"),
             Padding(
               padding: EdgeInsets.fromLTRB(25.0, 16.0, 0, 0),
               child: Text("Overall Energy"),
             ),
-            OnboardingSlider(),
+            OnboardingSlider(text: "Overall Energy"),
             Padding(
               padding: EdgeInsets.fromLTRB(25.0, 16.0, 0, 0),
               child: Text("Staying Organized"),
             ),
-            OnboardingSlider(),
+            OnboardingSlider(text: "Staying Organized"),
             JournalButton(journalEntry: "Continue", screen: Helm())
           ],
         ));

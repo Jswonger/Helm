@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:senior_design/Model/onboarding_data.dart';
 
 class OnboardingSwitch extends StatefulWidget {
   String text;
@@ -16,7 +17,9 @@ class OnboardingSwitchClass extends State {
 
   //OnboardingSwitchClass(title) : this.title = title;
 
-  OnboardingSwitchClass({this.title});
+  OnboardingSwitchClass({this.title}) {
+    OnboardData.addUpdateData(this.title, this.switchControl);
+    }
 
   @override
   Widget build(BuildContext context) {
@@ -45,5 +48,7 @@ class OnboardingSwitchClass extends State {
         switchControl = status;
       });
     }
+
+    OnboardData.addUpdateData(title, switchControl);
   }
 }
